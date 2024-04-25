@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+25&display=swap');
+
+:root {
+  --primary-color: #000;
+  --secondary-color: #fff;
+  --third-color: #ab0a0a;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 20px;
+}
+
+main {
+  padding: 50px;
+}
+
+form,
+table {
+  margin-top: 25px !important;
+}
+
+.convert_container > *,
+.info_container > * {
+  margin: 10px;
+}
+.convert_container,
+.info_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.input_number {
+  font-size: 20px;
+  padding: 10px;
+  border: 2px solid #000;
+  border-radius: 5px;
+  width: 200px;
+  text-align: center;
+  display: block;
+  font-family: 'Jersey 25', cursive;
+  margin-bottom: 10px;
+}
+.input_number:focus {
+  outline: none;
+  border: 2px solid var(--third-color);
+}
+
+.convert_button {
+  padding: 10px 20px;
+  font-size: 20px;
+  border: 2px solid #000;
+  border-radius: 5px;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  font-family: 'Jersey 25', cursive;
+  width: 100%;
+}
+.convert_button:hover {
+  background-color: #fff;
+  color: var(--primary-color);
+  transition: 0.3s;
+  border: 2px solid var(--third-color);
+}
+hr {
+  border: var(--third-color) 1px solid;
+  width: 80%;
+  margin: 20px 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+td {
+  padding: 10px;
+  border: 1px solid #000;
+  text-align: center;
+  font-family: 'Jersey 25', cursive;
+}
+th {
+  padding: 10px;
+  border: 1px solid #000;
+  text-align: center;
+  color: var(--third-color);
+  font-family: 'Jersey 25', cursive;
+}
+table {
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+p h2,
+p h1 {
+  margin: 10px;
+  color: var(--third-color);
+}
+
+.romen {
+  color: var(--third-color);
+}
