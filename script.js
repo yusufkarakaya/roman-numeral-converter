@@ -36,9 +36,6 @@ function convertToRomen(number) {
   let a;
   for (let key in romanNumList) {
     a = Math.floor(number / romanNumList[key]);
-    console.log(
-      `a: ${a} key: ${key} number: ${number} romanNumList[key]: ${romanNumList[key]}`
-    );
     if (a >= 0) {
       for (let i = 0; i < a; i++) {
         roman += key;
